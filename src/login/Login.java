@@ -21,6 +21,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 /**
@@ -58,9 +59,10 @@ public class Login extends Application {
         
         Text scenetitle=new Text("         Welcome");
         scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
-        grid.add(scenetitle, 0, 0, 2, 1);
+        scenetitle.setTextAlignment(TextAlignment.CENTER);
+        grid.add(scenetitle, 0, 0, 3, 1);
         
-        Label userName=new Label("Udser Name:");
+        Label userName=new Label("User Name:");
         grid.add(userName, 0, 1);
         
         TextField userTextField= new TextField();
