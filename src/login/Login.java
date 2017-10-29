@@ -51,7 +51,7 @@ public class Login extends Application {
         btn.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent e){
-                actiontarget.setFill(Color.FIREBRICK);
+                actiontarget.setFill(Color.WHITESMOKE);
                 actiontarget.setText("Sign in button pressed");
         }
     });
@@ -76,7 +76,7 @@ public class Login extends Application {
         //for debugging
         //grid.setGridLinesVisible(true);        
         
-        Scene scene = new Scene(grid, 300, 275);
+        Scene scene = new Scene(grid, 1024, 640);
         primaryStage.setScene(scene);
         scene.getStylesheets().add(Login.class.getResource("Login.css").toExternalForm());
         primaryStage.show();
